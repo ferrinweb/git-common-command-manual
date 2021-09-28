@@ -37,6 +37,8 @@ git push
 
 > git stash 指令是跨分支的。
 
+了解更多：https://git-scm.com/docs/git-stash
+
 ### 一) 指令说明
 
 ```bash
@@ -232,8 +234,29 @@ git fetch
 # 当不确定分支名时可查看以确认分支名
 git branch -r
 git checkout 目标分支名
+```
 
+### 六) 清理分支提交历史记录，且保留最新版本状态
 
+假设需要清理 dev 分支的提交历史记录。
+
+此处需要使用 orphan 参数来创建不包含就提交记录的分支。
+
+了解更多：https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt---orphanltnewbranchgt
+
+```bash
+# 使用 --orphan 参数新建不包含历史记录的临时分支
+git checkout --orphan temp_branch
+# 添加文件
+git add -A
+# 提交
+git commit -am "commit message"
+# 删除原来分支
+git branch -D dev
+# 重命名分支
+git branch -m dev
+# 提交到远程
+git push -f origin dev
 ```
 
 ## 五、Tag 相关操作
