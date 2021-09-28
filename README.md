@@ -37,7 +37,7 @@ git push
 
 > git stash 指令是跨分支的。
 
-了解更多：https://git-scm.com/docs/git-stash
+了解更多：[https://git-scm.com/docs](https://git-scm.com/docs/git-stash)
 
 ### 一) 指令说明
 
@@ -242,7 +242,7 @@ git checkout 目标分支名
 
 此处需要使用 orphan 参数来创建不包含就提交记录的分支。
 
-了解更多：https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt---orphanltnewbranchgt
+了解更多：[https://git-scm.com/docs](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt---orphanltnewbranchgt)
 
 ```bash
 # 使用 --orphan 参数新建不包含历史记录的临时分支
@@ -323,3 +323,8 @@ git update-index --no-assume-unchanged file
 ```bash
 git remote set-url origin 新仓库地址
 ```
+
+
+
+更多：[Git 官方文档](https://git-scm.com/docs)
+
